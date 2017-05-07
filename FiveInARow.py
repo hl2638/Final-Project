@@ -106,17 +106,21 @@ class Five:
                 elif self.board[i][j] == 2:
                     print('●', end='')
             print('\n')'''
-        result = '   0 1 2 3 4 5 6 7 8 9\n'
+        #result = '   0 1 2 3 4 5 6 7 8 9\n'
+        result = '   y0   1   2   3   4   5   6   7   8   9\nx'
         for i in range(self.max_x):
-            result += str(i)
+            result += str(i) + ' '
             for j in range(self.max_y):
                 if self.board[i][j] == 0:
                     # result += '十'
-                    result += ' +'
+                    #result += ' +'
+                    result += '  + '
                 elif self.board[i][j] == 1:
-                    result += ' o'
+                    #result += ' o'
+                    result += ' 〇 '
                 elif self.board[i][j] == 2:
-                    result += ' *'
+                    #result += ' *'
+                    result += ' ● '
             result += '\n'
         return result
 
